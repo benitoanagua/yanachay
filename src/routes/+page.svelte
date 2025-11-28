@@ -120,16 +120,6 @@
             {/each}
           </div>
 
-          <!-- Footer energético -->
-          <div class="mt-8 rounded-[14px] bg-gradient-to-r from-[#FF007A]/10 via-[#7C00FF]/10 to-[#00FFFF]/10 p-4 ring-2 ring-inset ring-[#FF00FF]/30">
-            <div class="flex items-center justify-center gap-4">
-              <span class="icon-[carbon--growth] text-2xl text-[#00FF9D]"></span>
-              <p class="text-center text-sm font-black text-white">
-                MÁS DE <span class="text-[#00FFFF]">50 PROYECTOS</span> IMPULSADOS CON ENERGÍA DIGITAL
-              </p>
-              <span class="icon-[carbon--trending-up] text-2xl text-[#FF007A]"></span>
-            </div>
-          </div>
         </Card>
 
         <!-- FAQ Section -->

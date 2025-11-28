@@ -1,4 +1,4 @@
-# Yanachay - Hosting Bolivia
+# Landing page - Hosting Bolivia
 
 Landing page especializada en ofrecer servicios de hosting web para el mercado boliviano.
 
