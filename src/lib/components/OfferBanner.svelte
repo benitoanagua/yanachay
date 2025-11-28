@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { expires, discount = 50 } = $props();
+  let { expires, discount = 20 } = $props();
 </script>
 
 <div class="rounded-xl bg-gradient-to-br from-[#FF2D95]/20 to-[#00F0FF]/15 p-4 ring-2 ring-inset ring-[#FF00FF]/30 backdrop-blur-sm border border-[#00FFFF]/20">
