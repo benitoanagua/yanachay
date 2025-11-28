@@ -1,2 +1,49 @@
 @import 'tailwindcss';
-@plugin "@iconify/tailwind4";
+@plugin '@iconify/tailwind4';
+
+@theme {
+	--animate-glow: glow 2s ease-in-out infinite alternate;
+	--animate-float: float 6s ease-in-out infinite;
+	--animate-pulse-soft: pulse-soft 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+	from {
+		box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+	}
+	to {
+		box-shadow:
+			0 0 30px rgba(255, 0, 255, 0.8),
+			0 0 40px rgba(0, 255, 255, 0.4);
+	}
+}
+
+@keyframes float {
+	0%,
+	100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+@keyframes pulse-soft {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.8;
+	}
+}
+
+body {
+	font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Montserrat', system-ui, sans-serif;
+}

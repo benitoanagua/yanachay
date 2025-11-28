@@ -2,7 +2,6 @@
   import { onMount, onDestroy } from 'svelte';
   import { writable } from 'svelte/store';
 
-  // Accept props with default values
   let { 
     target = new Date(new Date().getFullYear(), 11, 31, 23, 59, 59),
     showLabels = false 
@@ -38,32 +37,32 @@
   });
 </script>
 
-<div class="border-2 border-[#FF00FF] bg-[#07020A] rounded-lg p-4 flex justify-center space-x-4">
+<div class="border-2 border-[#FF00FF] bg-[#07020A] rounded-lg p-4 flex justify-center space-x-4 shadow-[0_0_20px_rgba(255,0,255,0.3)] backdrop-blur-sm">
   {#if showLabels}
     <div class="flex items-center space-x-1">
-      <span class="text-white font-bold">{$timeLeft.days}</span>
-      <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] text-sm">días</span>
+      <span class="text-white font-bold text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]">{$timeLeft.days}</span>
+      <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] text-sm font-semibold">días</span>
     </div>
     <div class="flex items-center space-x-1">
-      <span class="text-white font-bold">{$timeLeft.hours}</span>
-      <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] text-sm">horas</span>
+      <span class="text-white font-bold text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]">{$timeLeft.hours}</span>
+      <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] text-sm font-semibold">horas</span>
     </div>
     <div class="flex items-center space-x-1">
-      <span class="text-white font-bold">{$timeLeft.minutes}</span>
-      <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] text-sm">min</span>
+      <span class="text-white font-bold text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]">{$timeLeft.minutes}</span>
+      <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] text-sm font-semibold">min</span>
     </div>
     <div class="flex items-center space-x-1">
-      <span class="text-white font-bold">{$timeLeft.seconds}</span>
-      <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] text-sm">seg</span>
+      <span class="text-white font-bold text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]">{$timeLeft.seconds}</span>
+      <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] text-sm font-semibold">seg</span>
     </div>
   {:else}
-    <span class="text-white font-bold">{$timeLeft.days}</span>
-    <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF]">d</span>
-    <span class="text-white font-bold">{$timeLeft.hours}</span>
-    <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF]">h</span>
-    <span class="text-white font-bold">{$timeLeft.minutes}</span>
-    <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF]">m</span>
-    <span class="text-white font-bold">{$timeLeft.seconds}</span>
-    <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF]">s</span>
+    <span class="text-white font-bold text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]">{$timeLeft.days}</span>
+    <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] font-semibold">d</span>
+    <span class="text-white font-bold text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]">{$timeLeft.hours}</span>
+    <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] font-semibold">h</span>
+    <span class="text-white font-bold text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]">{$timeLeft.minutes}</span>
+    <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] font-semibold">m</span>
+    <span class="text-white font-bold text-lg drop-shadow-[0_0_6px_rgba(255,255,255,0.5)]">{$timeLeft.seconds}</span>
+    <span class="text-[#00FFFF] drop-shadow-[0_0_4px_#00FFFF] font-semibold">s</span>
   {/if}
 </div>
