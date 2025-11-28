@@ -162,6 +162,7 @@
         </div>
       </Card>
 
+
       <!-- FAQ Section -->
       <Card>
         <h2 class="mb-6 text-[24px] font-bold text-white flex items-center gap-2">
@@ -179,6 +180,48 @@
 
     <!-- Right Side Pricing Card -->
     <PricingCard />
+
+
+      <!-- Contact Professional Section (minimal) -->
+      <Card>
+        <h2 class="mb-6 text-[24px] font-bold text-white flex items-center gap-2">
+          <span class="icon-[carbon--contact] text-[#00FF9D]"></span>
+          Contacto Profesional
+        </h2>
+        <div class="flex flex-wrap gap-4 justify-center text-[#B8AFC0]">
+          <a href="https://linkedin.com/in/benito-anagua" class="flex items-center gap-2 underline hover:text-[#FF00FF]">
+            <span class="icon-[carbon--logo-linkedin]"></span>LinkedIn
+          </a>
+          <a href="https://github.com/benitoanagua" class="flex items-center gap-2 underline hover:text-[#FF00FF]">
+            <span class="icon-[carbon--logo-github]"></span>GitHub
+          </a>
+          <a href="https://benitoanagua.me" class="flex items-center gap-2 underline hover:text-[#FF00FF]">
+            <span class="icon-[carbon--globe]"></span>Web
+          </a>
+          <a href="https://behance.net/benitoanagua" class="flex items-center gap-2 underline hover:text-[#FF00FF]">
+            <span class="icon-[carbon--image]"></span>Behance
+          </a>
+          <a href="mailto:benito.anagua@gmail.com" class="flex items-center gap-2 underline hover:text-[#FF00FF]">
+            <span class="icon-[carbon--email]"></span>Email
+          </a>
+          <a href="https://wa.me/59172945548" class="flex items-center gap-2 underline hover:text-[#FF00FF]">
+            <span class="icon-[carbon--phone]"></span>WhatsApp
+          </a>
+        </div>
+      </Card>
+
+      <!-- Links de interés (International Clients & Infrastructure) -->
+      <Card>
+        <h2 class="mb-6 text-[24px] font-bold text-white flex items-center gap-2">
+          <span class="icon-[carbon--cloud] text-[#00FF9D]"></span>
+          Links de interés
+        </h2>
+        <ul class="list-disc list-inside text-[#B8AFC0] space-y-2">
+          <li><a href="https://www.hostinger.com" class="underline hover:text-[#FF00FF]"><strong>Hostinger</strong>: hosting económico, rápido y fácil de administrar.</a></li>
+          <li><a href="https://www.hostarmada.com" class="underline hover:text-[#FF00FF]"><strong>HostArmada</strong>: servidores optimizados, excelente soporte técnico.</a></li>
+          <li><a href="https://www.namecheap.com/hosting" class="underline hover:text-[#FF00FF]"><strong>Namecheap Hosting</strong>: dominios económicos y servidores confiables.</a></li>
+        </ul>
+      </Card>
 
   </div>
 </div>
